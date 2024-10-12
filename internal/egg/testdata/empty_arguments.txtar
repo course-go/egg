@@ -1,0 +1,4 @@
+# empty arguments
+! exec egg
+! stdout .
+stderr .

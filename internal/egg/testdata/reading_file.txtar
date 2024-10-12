@@ -1,0 +1,23 @@
+# reading file
+exec egg world world.text
+cmp stdout golden.text
+! stderr .
+
+-- world.text --
+The world is a remarkable place, filled with endless wonders and mysteries.
+In this world, people from all walks of life share stories,
+dreams, and experiences that shape our collective understanding.
+The natural world offers breathtaking landscapes, from towering mountains to
+deep oceans, all contributing to the beauty of the Earth. At the same time,
+the human world is full of culture, innovation, and history, constantly
+evolving as societies grow and change. Though we live in one world, it
+often feels like a vast array of smaller worlds, each unique in its own way.
+
+-- golden.text --
+File: world.text
+  1: The world is a remarkable place, filled with endless wonders and mysteries.
+  2: In this world, people from all walks of life share stories,
+  4: The natural world offers breathtaking landscapes, from towering mountains to
+  6: the human world is full of culture, innovation, and history, constantly
+  7: evolving as societies grow and change. Though we live in one world, it
+  8: often feels like a vast array of smaller worlds, each unique in its own way.

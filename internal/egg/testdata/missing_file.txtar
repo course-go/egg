@@ -1,0 +1,4 @@
+# missing file
+! exec egg hello unknown-file.text
+! stdout .
+stderr .

@@ -1,0 +1,22 @@
+# reading stdin
+stdin stdin.text
+exec egg 'coffe|caffeine'
+cmp stdout golden.text
+! stderr .
+
+-- stdin.text --
+Coffee is to programmers what fuel is to rockets—without it, nothing takes off.
+A programmer’s day typically starts with a cup of coffee, followed by some
+intense coding, and then... another cup of coffee. Debugging? Coffee.
+Late-night coding spree? Coffee. Sometimes it seems like the code isn’t
+written in Python or Java, but in caffeine. And let’s be honest, if
+a programmer’s code compiles on the first try, it’s probably the
+coffee’s doing, not theirs. It’s the real MVP of the tech world,
+silently powering lines of code, one sip at a time.
+
+-- golden.text --
+File: stdin
+  2: A programmer’s day typically starts with a cup of coffee, followed by some
+  3: intense coding, and then... another cup of coffee. Debugging? Coffee.
+  5: written in Python or Java, but in caffeine. And let’s be honest, if
+  7: coffee’s doing, not theirs. It’s the real MVP of the tech world,
