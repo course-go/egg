@@ -22,7 +22,7 @@ The example usage is as follows:
 egg '\[[0-9]+\]' ./my/cool/file.txt /etc/random/config.txt
 ```
 
-The application will then read all the specified files and searches for lines that match the regural expression. For each line that matches, the application will print the matched line together with the line number.
+The application will then read all the specified files and searches for lines that match the regular expression. For each line that matches, the application will print the matched line together with the line number.
 
 The sample output:
 
@@ -45,6 +45,7 @@ The main goal of this homework is to practice basic control flow, error handling
 ## Packages
 
 Some of the Go packages worth looking into include:
+
 - [os](https://pkg.go.dev/os) for interacting with the operation system
 - [io](https://pkg.go.dev/io) and [bufio](https://pkg.go.dev/bufio) for interacting with input and outputs
 - [regexp](https://pkg.go.dev/regexp) for working with the regular expressions
