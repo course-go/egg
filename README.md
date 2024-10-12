@@ -45,6 +45,8 @@ When an invalid input is provided to the application or the application
 fails, it must print an error message to the standard error output and exit
 with non-zero status code.
 
+If you are unsure about some behaviour take the tests as the source of truth.
+
 ## Requirements
 
 The CLI application has to support all the functionality previously
