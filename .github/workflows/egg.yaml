@@ -1,0 +1,5 @@
+name: EGG CI
+on: pull_request
+jobs:
+  egg-ci:
+    uses: course-go/homework/.github/workflows/egg.yaml@master
