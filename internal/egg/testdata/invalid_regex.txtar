@@ -1,0 +1,4 @@
+# invalid regex
+! exec egg [;
+! stdout .
+stderr .
