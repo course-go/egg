@@ -1,0 +1,34 @@
+# reading files with missing
+! exec egg '\[.+\]' my-files/secret-folder/bible-black.text bible.text this-does-not-exist.text my-files/bible.text
+cmp stdout golden.text
+stderr this-does-not-exist.text
+
+-- my-files/secret-folder/bible-black.text --
+Even all the officials of the provinces and the chief rulers (satraps)
+and the governors and those who attended to the king’s business supported
+the Jews [in defeating their enemies], because the fear of Mordecai
+[and his God’s power] had fallen on them. 4For Mordecai was great
+and respected in the king’s palace, and his fame spread throughout
+all the provinces; for the man Mordecai became greater and greater.
+
+-- bible.text --
+Then God said, “Let Us (Father, Son, Holy Spirit) make man in Our image,
+according to Our likeness
+[not physical, but a spiritual personality and moral likeness]; and let
+them have complete authority over the fish of
+the sea, the birds of the air, the cattle, and over the entire earth,
+and over everything that creeps and crawls on the earth.”
+[Ps 104:30; Heb 1:2; 11:3]
+
+-- my-files/bible.text --
+So Potiphar told Joseph to take care of everything that belonged to him.
+Potiphar did not worry about anything in his house.
+The only thing that he thought about was the food that he ate.
+
+-- golden.text --
+File: my-files/secret-folder/bible-black.text
+  3: the Jews [in defeating their enemies], because the fear of Mordecai
+  4: [and his God’s power] had fallen on them. 4For Mordecai was great
+File: bible.text
+  3: [not physical, but a spiritual personality and moral likeness]; and let
+  7: [Ps 104:30; Heb 1:2; 11:3]
