@@ -1,10 +1,9 @@
 package egg
 
 // Run runs the EGG.
-// As the test are run using the testscript package the Run function is somewhat
-// of a replacement for the main function. Normally, you would not write functions
-// returning int exit codes like this. However, testscript require this signature.
-func Run() int {
+//
+// Normally, you would probably return error from this function and call os.Exit in main.
+// However, as the project uses the testscript package for testing it need to comply with the func() signature.
+func Run() {
 	// TODO
-	return 1
 }

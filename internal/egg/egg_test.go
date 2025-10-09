@@ -1,7 +1,6 @@
 package egg_test
 
 import (
-	"os"
 	"testing"
 
 	"github.com/course-go/egg/internal/egg"
@@ -9,9 +8,9 @@ import (
 )
 
 func TestMain(m *testing.M) {
-	os.Exit(testscript.RunMain(m, map[string]func() int{
+	testscript.Main(m, map[string]func(){
 		"egg": egg.Run,
-	}))
+	})
 }
 
 func TestEgg(t *testing.T) {
