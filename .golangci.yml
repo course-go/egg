@@ -1,0 +1,47 @@
+---
+version: "2"
+
+run:
+  tests: true
+
+linters:
+  default: all
+  disable:
+    # restrictive
+    - exhaustruct
+    - varnamelen
+    - nlreturn
+    - funlen
+    - nonamedreturns
+    - gochecknoglobals
+    - wsl
+    - err113
+    - depguard
+    - forbidigo
+    - wsl_v5
+    - revive
+  settings:
+    gosec:
+      excludes:
+        - G304 # file over variable
+
+formatters:
+  enable:
+    - gci
+    - gofmt
+    - gofumpt
+    - goimports
+    - golines
+  settings:
+    golines:
+      max-len: 120
+
+output:
+  formats:
+    text:
+      path: stdout
+    tab:
+      path: golangci-lint.out
+      colors: false
+    html:
+      path: golangci-lint.out.html
