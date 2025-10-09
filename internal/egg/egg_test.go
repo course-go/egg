@@ -14,6 +14,8 @@ func TestMain(m *testing.M) {
 }
 
 func TestEgg(t *testing.T) {
+	t.Parallel()
+
 	testscript.Run(t, testscript.Params{
 		Dir: "testdata",
 	})
