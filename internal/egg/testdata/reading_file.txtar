@@ -1,7 +1,9 @@
 # reading file
 exec egg world world.text
+
 cmp stdout golden.text
 ! stderr .
+! stderr 'panic: runtime error'
 
 -- world.text --
 The world is a remarkable place, filled with endless wonders and mysteries.

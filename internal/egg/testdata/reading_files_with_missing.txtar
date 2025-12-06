@@ -1,7 +1,9 @@
 # reading files with missing
 ! exec egg '\[.+\]' my-files/secret-folder/bible-black.text bible.text this-does-not-exist.text my-files/bible.text
+
 cmp stdout golden.text
 stderr this-does-not-exist.text
+! stderr 'panic: runtime error'
 
 -- my-files/secret-folder/bible-black.text --
 Even all the officials of the provinces and the chief rulers (satraps)

@@ -1,4 +1,6 @@
 # invalid regex
 ! exec egg [;
+
 ! stdout .
 stderr .
+! stderr 'panic: runtime error'

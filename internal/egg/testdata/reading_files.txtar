@@ -1,7 +1,9 @@
 # reading files
 exec egg '\[.+\]' bible.text my-files/bible.text my-files/secret-folder/bible-black.text
+
 cmp stdout golden.text
 ! stderr .
+! stderr 'panic: runtime error'
 
 -- bible.text --
 Then God said, “Let Us (Father, Son, Holy Spirit) make man in Our image,

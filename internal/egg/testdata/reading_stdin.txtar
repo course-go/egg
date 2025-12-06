@@ -1,8 +1,10 @@
 # reading stdin
 stdin stdin.text
-exec egg 'coffe|caffeine'
+exec egg 'coffee|caffeine'
+
 cmp stdout golden.text
 ! stderr .
+! stderr 'panic: runtime error'
 
 -- stdin.text --
 Coffee is to programmers what fuel is to rockets—without it, nothing takes off.
