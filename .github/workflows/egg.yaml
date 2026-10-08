@@ -2,4 +2,6 @@ name: EGG CI
 on: pull_request
 jobs:
   egg-ci:
+    # The template only contains an unimplemented stub, run CI in student repositories only.
+    if: github.repository != 'course-go/egg'
     uses: course-go/homework/.github/workflows/egg.yaml@master
