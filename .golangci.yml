@@ -9,6 +9,7 @@ linters:
   disable:
     # restrictive
     - exhaustruct
+    - exhaustruct_v5
     - varnamelen
     - nlreturn
     - funlen
@@ -20,6 +21,8 @@ linters:
     - forbidigo
     - wsl_v5
     - revive
+    # deprecated
+    - gomodguard # replaced by gomodguard_v2
   settings:
     gosec:
       excludes:
